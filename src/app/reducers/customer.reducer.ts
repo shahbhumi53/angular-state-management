@@ -1,4 +1,4 @@
-import { ActionEx, CustomerActionTypes } from './customer.actions';
+import { ActionEx, CustomerActionTypes } from '../actions/customer.actions';
 export const initialState = [];
 export function CustomerReducer(state = initialState, action: ActionEx) {
   switch (action.type) {
