@@ -1,2 +1,19 @@
-<h4>Add New Customer</h4>
-<input #box ><button (click)="AddCustomer(box.value)">Add</button>
+<div class="container">
+  <div class="row show-grid">
+    <div class="col-md-12">
+      <h4>Add New Customer</h4>
+      <div class="input-group mb-3">
+        <input type="text"
+               #box
+               class="form-control"
+               placeholder="Enter Customer Name"
+               aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary"
+                  (click)="AddCustomer(box.value)"
+                  type="button">Add Customer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
